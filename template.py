@@ -141,7 +141,7 @@ criterion = nn.CrossEntropyLoss()  # Loss function initialization
 
 # TODO: Adjust the following hyper-parameters: learning rate, decay strategy, number of training epochs.
 # Optimizer initialization
-optimizer_ft = optim.Adam(model_ft.parameters(), lr=1e-6)  # -4
+optimizer_ft = optim.Adam(model_ft.parameters(), lr=1e-4)
 
 exp_lr_scheduler = lr_scheduler.StepLR(
     optimizer_ft, step_size=20, gamma=0.5)  # 0.1  # Learning rate decay strategy
